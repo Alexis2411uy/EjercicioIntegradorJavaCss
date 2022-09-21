@@ -39,7 +39,14 @@
             </div>  
         </div> 
     </nav>
+    <div class="relative">
     <img class="img-fluid" src="img/ba1.jpg" alt="Monumento Historico BA">
+    </div>
+    <div class="absolute">
+        <h3>Conf Bs As</h3>
+        <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+    </div>
+    
     <div class="container-fluid">
         <p class="text-center align-text-botton">CONOCE A LOS</p>
         <P class="h3 text-center align-text-top">ORADORES</P>
@@ -51,6 +58,7 @@
                 <div class="card" style="width:100%">
                     <img class="card-img-top img-fluid" src="img/steve.jpg" alt="Steve Jobs">
                     <div class="card-body">
+                        <p><span class="badge bg-warning">JavaScript</span> <span class="badge bg-primary">React</span></p>
                     <h4 class="card-title">Steve Jobs</h4>
                     <p class="card-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id earum dicta quia dolores possimus totam in dolorem, dignissimos veritatis voluptates aut vero inventore incidunt quam iusto! Tenetur perferendis culpa cum.</p>
                     </div>
@@ -60,8 +68,10 @@
                 <div class="card" style="width:100%">
                     <img class="card-img-top" src="img/bill.jpg" alt="Bill Gates">
                     <div class="card-body">
+                        <p><span class="badge bg-warning">JavaScript</span> <span class="badge bg-primary">React</span></p>
                     <h4 class="card-title">Bill Gates</h4>
-                    <p class="card-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id earum dicta quia dolores possimus totam in dolorem, dignissimos veritatis voluptates aut vero inventore incidunt quam iusto! Tenetur perferendis culpa cum.</p>
+                    <p class="card-text">
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id earum dicta quia dolores possimus totam in dolorem, dignissimos veritatis voluptates aut vero inventore incidunt quam iusto! Tenetur perferendis culpa cum.</p>
                     </div>
                 </div>
             </div>
@@ -69,6 +79,7 @@
                 <div class="card" style="width:100%">
                     <img class="card-img-top" src="img/ada.jpeg" alt="Ada Lovelace">
                     <div class="card-body">
+                        <p><span class="badge bg-secondary">Negocios</span> <span class="badge bg-danger">Starups</span></p>
                     <h4 class="card-title">Ada Lovelace</h4>
                     <p class="card-text"><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id earum dicta quia dolores possimus totam in dolorem, dignissimos veritatis voluptates aut vero inventore incidunt quam iusto! Tenetur perferendis culpa cum.</p>
                     </div>
@@ -79,29 +90,43 @@
     </div>
     <div class="container-fluid my-4">
     <div class="row">
-        <div class="col-6">
-            <img src="img/honolulu.jpg" class="mx-auto d-block"  alt="Playa Honolulu" width="100%">
+        <div class="col-6 border-0 p-0">
+            <img src="img/honolulu.jpg" class="img-fluid"  alt="Playa Honolulu" width="100%">
         </div>
-        <div class="col-6 bg-secondary">
+        <div class="col-6 bg-dark text-light p-4">
             <h5>
                 Bs As - Octubre
             </h5>
             <p>
-            Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<small>2</small> de superficie).
+                Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades estadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste de la isla Oahu, la ciudad y el condado de Honolulu han formado una ciudad-condado consolidada que cubre toda la ciudad (aproximadamente 600km<small>2</small> de superficie).
             </p>
                 
         </div>
     </div>
 </div>
-<div class="container fondorosa">
-    <div class="row">
-        <div class="col">
-            <p class="text-center">CONVIÉRTETE EN UN</p>
-            <P class="h3 text-center">ORADOR</P> 
-            <p class="text-center">Anótate como orador para dar una charla ingite. Cuéntanos de qué quieres hablar!</p>
+<div class="container mt-3">
+    <p class="text-center">CONVIÉRTETE EN UN</p>
+    <h2 class="text-center">ORADOR</h2>
+    <p class="text-center">Anótate como orador para dar una charla ingite. Cuéntanos de qué quieres hablar!</p>
+
+    <form>
+      <div class="row">
+        <div class="col pe-2">
+          <input type="text" class="form-control" placeholder="Nombre" name="nombre">
         </div>
-    </div>
-</div>
+        <div class="col ps-2">
+          <input type="text" class="form-control" placeholder="Apellido" name="apellido">
+        </div>
+        <form action="/action_page.php">
+            <div class="mb-3 mt-3 p-0 colorbotonform">
+              <label for="comment">Comments:</label>
+              <textarea class="form-control" rows="5" id="comment" name="text"></textarea>
+            </div>
+            <button type="submit" class="btn colorbotonform">Submit</button>
+          </form>
+      </div>
+    </form>
+  </div>
 
 </body>
 </html>

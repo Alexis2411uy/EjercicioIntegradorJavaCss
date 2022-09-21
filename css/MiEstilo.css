@@ -1,1 +1,26 @@
+.colorbotonform{
+    background-color: green;
+}
+
+.relative{
+position: relative;
+}
+
+.absolute{
+    position: absolute;
+    bottom: 25%;
+    right: 9%;
+    text-align: end;
+    color: white;
+    width: 500px;
+ }
+
+img{
+    height: auto;
+background-image: url(img/ba1.jpg);
+background-color: rgb(40,50,50);
+background-blend-mode: overlay;
+background-size: cover;
+opacity: 0.9;
+}
 
