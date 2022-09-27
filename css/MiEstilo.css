@@ -3,24 +3,34 @@
 }
 
 .relative{
-position: relative;
+    width: 100%;
+    height: 550px;
+    filter: brightness(70%);
+    position: relative;
+    overflow: hidden;
+    justify-content: center;
 }
 
 .absolute{
-    position: absolute;
-    bottom: 25%;
-    right: 9%;
+  position: absolute;
+    font-size: 1.1rem;
+    color: whitesmoke;
+    bottom: 45%;
     text-align: end;
-    color: white;
-    width: 500px;
+    font-weight: 400;
+    right: 6%;
+    width: 550px;
+    overflow: hidden;
  }
 
-img{
-    height: auto;
-background-image: url(img/ba1.jpg);
-background-color: rgb(40,50,50);
-background-blend-mode: overlay;
-background-size: cover;
-opacity: 0.9;
+.imgbanner{
+display: block;
+margin-top: auto;
+margin-bottom: auto;
+width: 100%;
+}
+.estiloButton{
+    background-color: rgb(41,167,87);
+    border-color:rgb(41,167,87) ;
 }
 
